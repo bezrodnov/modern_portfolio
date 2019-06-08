@@ -42,9 +42,20 @@
     .portrait {
       background: $portrait_url;
       background-size: contain;
+      min-width: 150px;
+      min-height: 150px;
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2";
+    grid-template-columns: 1fr;
   }
 }
 
